@@ -1,0 +1,32 @@
+{
+    "name": "toggle-problems-visibility",
+    "displayName": "Toggle Problems Visibility",
+    "description": "Adds a command and keybinding to toggle the problems.visibility setting.",
+    "version": "0.0.1",
+    "publisher": "vbshuliar",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "onCommand:toggleProblemsVisibility.toggle"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "toggleProblemsVisibility.toggle",
+                "title": "Toggle Problems Visibility"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "toggleProblemsVisibility.toggle",
+                "key": "ctrl+alt+shift+p",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "categories": [
+        "Other"
+    ]
+}
